@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "watch": "tsc -w",
+    "action-test": "echo 'Hi mom'",
     "serve": "concurrently \"npm run watch\" \"npm run start\"",
     "dev": "tsnd -r tsconfig-paths/register --exit-child --transpile-only --respawn src/server.ts"
   },

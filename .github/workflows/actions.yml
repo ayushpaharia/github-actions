@@ -8,4 +8,7 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: 16.x
-    - run: tree
+    - name: Build the project
+      run: yarn action-test
+    - name: Setup finish
+      run: echo "Setup complete"
