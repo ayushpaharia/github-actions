@@ -4,11 +4,5 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
-    - name: Print "Hello World"
-      uses: actions/echo@v1
-      with:
-        message: Hello World 
-    - name: Print "Hi mom"
-      uses: actions/echo@v1
-      with:
-        message: Hi mom 
+    - run: echo "Hello World - step-1"
+    - run: echo "Hi Mom - step-2"
